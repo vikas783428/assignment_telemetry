@@ -1,0 +1,45 @@
+seed: 42
+
+days: 21
+interval_minutes: 15
+
+sites:
+  - id: S1
+    type: urban
+    traffic_scale: 1.6
+
+  - id: S2
+    type: urban
+    traffic_scale: 1.4
+
+  - id: S3
+    type: suburban
+    traffic_scale: 1.1
+
+  - id: S4
+    type: suburban
+    traffic_scale: 1.0
+
+  - id: S5
+    type: rural
+    traffic_scale: 0.7
+
+  - id: S6
+    type: rural
+    traffic_scale: 0.6
+
+  - id: S7
+    type: highway
+    traffic_scale: 1.2
+
+  - id: S8
+    type: industrial
+    traffic_scale: 1.3
+
+  - id: S9
+    type: mixed
+    traffic_scale: 1.0
+
+  - id: S10
+    type: stadium
+    traffic_scale: 2.2

@@ -1,0 +1,98 @@
+✅ 1. How to run the project (correct order)
+
+Go to your project root:
+
+cd C:\Users\Vikas\Desktop\assignment_telemetry\assignment_telemetry
+▶ Step 1: Install dependencies
+pip install -r requirements.txt
+
+(if that file is broken, install manually later)
+
+▶ Step 2: Run data generation
+py code\generator.py
+
+👉 This creates synthetic telemetry data inside data/
+
+▶ Step 3: Run fault detection
+py code\detector.py
+
+👉 Detects anomalies/faults in telemetry
+
+▶ Step 4: Run root cause analysis
+py code\rca.py
+
+👉 Finds WHY the fault happened
+
+▶ Step 5: Run visualization
+py code\visualize.py
+
+👉 Shows graphs/plots
+
+▶ Step 6 (optional): Evaluation
+py code\evaluate.py
+
+👉 Compares predicted faults vs ground truth
+
+📊 2. What output you should expect
+✔ generator.py
+Creates CSV/log files in data/
+Example:
+CPU usage
+Memory usage
+Latency
+Packet loss
+timestamps
+✔ detector.py
+Prints detected anomalies like:
+[ALERT] High CPU usage detected at t=1023
+[ALERT] Network latency spike detected
+✔ rca.py
+Gives root cause:
+Root Cause: Memory leak in Service B
+Confidence: 0.87
+
+or
+
+Root Cause: Network congestion
+✔ visualize.py
+Graphs like:
+CPU vs Time
+Latency spikes
+Anomaly points highlighted
+
+👉 Usually matplotlib graphs pop up
+
+✔ evaluate.py
+Shows performance:
+Precision: 0.92
+Recall: 0.89
+F1 Score: 0.90
+🧠 3. What you should explain in interview/viva
+
+This is the MOST IMPORTANT part.
+
+🎯 Project Summary (say this)
+
+“This project is a Network Telemetry Fault Detection and Root Cause Analysis system. It generates synthetic telemetry data, detects anomalies, identifies faults, performs root cause analysis, and visualizes system behavior.”
+
+🧩 Architecture explanation
+
+Say:
+
+Data Generator
+Simulates real-world system metrics
+Detector
+Finds anomalies using threshold/statistical rules or ML
+RCA module
+Correlates signals to find root cause
+Visualization
+Graphical representation of system health
+Evaluation
+Measures accuracy using ground truth
+📌 Key concepts to mention
+Time series data
+Anomaly detection
+Threshold-based / statistical detection
+Correlation analysis
+Root Cause Analysis (RCA)
+Precision / Recall evaluation
